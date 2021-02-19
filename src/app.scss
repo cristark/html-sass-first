@@ -1,0 +1,62 @@
+// - Variabili
+$first_color: #415d43;
+$second_color: #709775;
+$third_color: #111d13;
+$main_height: 80px;
+
+@mixin basicFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// | Inizio codice SCSS
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  color: #fff;
+  font-weight: 800;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+p {
+  text-align: center;
+}
+
+header,
+footer {
+  width: 100%;
+  height: $main_height;
+  background: $third_color;
+
+  p {
+    line-height: $main_height;
+  }
+}
+
+main {
+  height: calc(100vh - #{$main_height * 2});
+  @include basicFlex;
+
+  .sx_col,
+  .dx_col {
+    background: $first_color;
+    height: 100%;
+    padding: 0 80px;
+    @include basicFlex;
+  }
+
+  .cen_col {
+    background: $second_color;
+    height: 100%;
+    flex-grow: 1;
+    @include basicFlex;
+  }
+}

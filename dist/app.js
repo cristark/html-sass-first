@@ -11,9 +11,9 @@
 
 /***/ }),
 
-/***/ "./src/app.sass":
+/***/ "./src/app.scss":
 /*!**********************!*\
-  !*** ./src/app.sass ***!
+  !*** ./src/app.scss ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -85,7 +85,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		
 /******/ 		var deferredModules = [
 /******/ 			["./src/app.js"],
-/******/ 			["./src/app.sass"]
+/******/ 			["./src/app.scss"]
 /******/ 		];
 /******/ 		// no chunk on demand loading
 /******/ 		
